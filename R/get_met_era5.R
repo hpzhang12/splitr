@@ -20,9 +20,9 @@ get_met_era5 <- function(days,
     direction = direction,
     suffix = ".ARL",
     prefix = "ERA5_"
-  ) #%>%
-    #get_met_files(
-    #  path_met_files = path_met_files,
-    #  ftp_dir = "ftp://arlftp.arlhq.noaa.gov/archives/gdas0p5"
-    #)
+  ) %>%
+    get_met_files(
+      path_met_files = path_met_files,
+      ftp_dir = "ftp://arlftp.arlhq.noaa.gov/archives/gdas0p5"
+    )
 }
