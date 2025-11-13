@@ -82,5 +82,17 @@ download_met_files <- function(met_type,
       )
   }
 
+    if (met_type == "merra2") {
+    
+    met_files <-
+      get_met_merra2(
+        days = days,
+        duration = duration,
+        direction = direction,
+        path_met_files = met_dir
+      )
+  }
+
+  
   met_files
 }
