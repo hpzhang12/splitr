@@ -163,7 +163,7 @@ hysplit_trajectory <- function(lat = 49.263,
       direction = direction,
       met_dir = met_dir
     )
-  message("DEBUG: met_type = ", met_type)
+  message("DEBUG: met_files = ", met_files)
   
   # Generate a tibble of receptor sites
   receptors_tbl <- 
